@@ -81,13 +81,13 @@ def merge_mp3s(mp3_paths, story_number):
 
 # The outer for loop sets the number of stores 
 # Generate 6 different stories
-number_stories = 6
+number_stories = 1
 
 
-for story_number in range(1, number_stories):
+for story_number in range(1, number_stories+1):
     # Request an outline and a title for a superhero children's book story in German with 5 chapters
     outline_response = client.chat.completions.create(
-      model="gpt-4",
+      model="gpt-4o",
       messages=[
         #the general content of the stories
         {"role": "system", "content": "You're crafting superhero tales for young children. The adventures center on the siblings Emma (6) and Leo (4), along with their cousin Mia (4). These kids possess unique superpowers that enable them to tackle challenges and assist others in their community. In each episode, they face a new, imaginative predicament that requires their special skills for resolution. From saving a local park from environmental threats to helping lost animals find their way home, Emma, Leo, and Mia demonstrate teamwork, compassion, and quick thinking, embodying the spirit of young heroes making a difference in their world."},
@@ -105,7 +105,7 @@ for story_number in range(1, number_stories):
     chapters = []
     for i in range(1, 6):
         chapter_response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": outline},  # Include the outline here
                 #ask it to now create the actual story
