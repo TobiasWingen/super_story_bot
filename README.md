@@ -24,7 +24,7 @@ The script offers a flexible framework for generating stories by adjusting initi
 
 To get started with generating your own audio stories, follow these steps:
 
-1. Clone this repository: https://github.com/TobiasWingen/story_bot.git
+1. Clone this repository: https://github.com/TobiasWingen/super_story_bot.git
 
 2. Install the required Python libraries:
 
