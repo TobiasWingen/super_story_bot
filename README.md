@@ -1,8 +1,9 @@
 
 
-# Audio Story Generator
+# Super Story Bot
 
-This project enables the generation of audio stories for children, adaptable to various themes. The example code focuses on German superhero tales. It utilizes OpenAI's GPT models for crafting stories which are then converted into audio format. Stories have a length from 5 - 15 minutes and contain 5 chapters
+This project enables the generation of audio stories for children, adaptable to various themes. The example code focuses on German superhero tales. It utilizes OpenAI's GPT models for crafting stories which are then converted into audio format. Stories have a length from 5 - 15 minutes and contain 5 chapters.
+The resulting stories ca be used for private purposes but might also be useful as research stimuli.
 
 ## Cost and Risk Disclaimer
 
